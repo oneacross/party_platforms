@@ -1,5 +1,7 @@
-<h1>{{ party }} proposal</h1>
+<h1>{{ year }} {{ party }} party proposals</h1>
 
 <ul>
-    <li>{{ proposal }}</li>
+    {% for proposal in proposals %}
+        <li>{{ proposal }}</li>
+    {% endfor %}
 </ul>
